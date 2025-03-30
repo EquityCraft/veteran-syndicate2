@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veteran Syndicate | Fast Cash for Homes</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .hero {
+      background-color: #003366;
+      color: white;
+      padding: 50px;
+      text-align: center;
+    }
+    .qr-code {
+      width: 200px;
+      margin: 20px;
+      cursor: pointer;
+    }
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    input, button {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      box-sizing: border-box;
+    }
+    button {
+      background-color: #003366;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <h1>FAST CASH FOR VETERANS</h1>
+    <p>Sell your house TODAY for CASH – no fees, no banks.</p>
+    <img src="qr-code.png" alt="Scan to Sell" class="qr-code">
+  </header>
+
+  <form action="your-backend-form-handler.php" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="tel" name="phone" placeholder="Phone Number" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <button type="submit">Get My Valuation</button>
+  </form>
+
+  <script>
+    document.querySelector('.qr-code').addEventListener('click', () => {
+      alert('QR code scanned!');
+      // Add tracking/analytics here (e.g., Google Analytics)
+    });
+  </script>
+</body>
+</html>
